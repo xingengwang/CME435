@@ -1,0 +1,58 @@
+`timescale 1ns/1ns
+`include "./env.sv"
+
+module sanity_test();
+   env_m env();
+   sanity_test_p sanity_test();
+endmodule
+
+program sanity_test_p();
+   initial begin
+      env.run();
+   end
+
+   initial begin
+      // TO DO:
+      // Try the following error injection routines, one at a time. The interface
+      // monitors can't detect these bugs. However, your module component should
+      // have the appropriate checks of end-to-end packet traffic passing *through*
+      // the PDM to raise appropriate errors.
+      //env.dut.pdm_core_inst.set_data_corruption(1);
+      //env.dut.pdm_core_inst.set_bad_routing(1);
+      //env.dut.pdm_core_inst.out_drvr_1.set_corrupt_newdata_len(1);
+   end
+
+	initial begin
+      #1000 $stop;
+   end
+
+   initial begin
+      in_td_c td;
+
+      // Drive packet to output port 1
+      td = new();
+      td.dst_port = 1;
+      td.payload  = {1,2,3,4};
+      env.in_drvr.add_drive_pkt(td);
+
+      // Drive packet to output port 2
+      td = new();
+      td.dst_port = 2;
+      td.payload  = {5,6,7,8};
+      env.in_drvr.add_drive_pkt(td);
+
+      // Drive packet to output port 3
+      td = new();
+      td.dst_port = 3;
+      td.payload  = {9,10,11,12,13,14,15,16};
+      env.in_drvr.add_drive_pkt(td);
+
+      // Drive packet to output port 4
+      td = new();
+      td.dst_port = 4;
+      td.payload  = {17,18,19,20,21,22,23,24};
+      env.in_drvr.add_drive_pkt(td);
+
+   end
+endprogram
+
