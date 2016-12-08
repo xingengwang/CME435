@@ -1,0 +1,40 @@
+`ifndef IN_TYPES
+   `define IN_TYPES
+   `include "in_intf/in_types.sv"
+`endif
+
+class in_td_c;
+   in_data_t        dst_port;
+   in_data_t        payload[];
+   int              inter_packet_delay;
+endclass
+
+class in_drvr_c;
+
+   virtual in_intf_if.master ports;
+   in_td_c pkts_to_drive[$];
+
+`protected
+
+    MTI!#v};mW7+sv22wiv*!I5rrKQ;I>T@#EmZI73B>jDir,TYT$G,[\[^B[$YZJXRsD@D@EQs*&Re
+    [}yZTQ~}m<,LZ$@eCJ|+RpDmE$IUl<r[3K$[OJo%M[<]_>]ooPu7A$52rZeG!}>'kBb0<^J#Co=r
+    *;=EQC\oH*k>]EkCJDR#S<lO]bt?_>v,aweeZD\=@1Q4+=3$-IA=GXMQeri;,BXI2{U+C1vo,xp!
+    }pn|ko{u$[w5R1s#?=<x}+C_<$,[Qom<fjpk!$xw{$i-\e?5]UBIl>Aul/G;*a],]z%#wzBls,,+
+    RV@m5A!#A[vA}7RUx?vJXrKeYCuo6bIr1~_w]l21?Irl<G@\$if+,#_2H3x_X2v^x{_D?}]?5u-<
+    AVVCr=[Y\!oqB>Z#jv,]N_lQY=liQY4"P^o#?/!o-AAND-w'#\C}1n7i^>Y>T5nIo<+]2D2s)QG*
+    D1u_Y^r@?.}maQ_sOQ}?\>lzu?kXE#\K*CA>[AB<U\Be7V\ds;YwHOe,\i~G_Tul}z[=$"9]\<;*
+    7*,?}+7TRXki.hzK+@|\_}ErGXw{+]!!n(^|lJn[;UQu{w!D5E=XCWxCVs;x7<u}+r<WVCi3@s!s
+    Wx37As3=i712M~xw1rRk*RC^i,klR#n\[tHEx=xh5{!,5A~DCW\RxH_kJrr;35CrE'-\3GU-$I>j
+    '5>'*5O5Cz!]_5H7]ZFCU@G$OlO!{o3GYTk5D@3ahFC![I}i3w:[W>JpERRjC_B9-Ue~[mw,7Roo
+    C<n#>^[YIV*i}TO$p-KoasQ[cIHAWcvU@r@7Vr*?H$^xXp'=KT5@w5#oC7zJE;Q?TW.eO2r?x-}'
+    \Y{npla<}WjJOBRIW{CB\u55mo@IUAELIWTeaIT#i7?pT=R]kBaRJ,^kU,gna5O]h{Ym-[AOn0Os
+    S#-3^zQ!mjRk;O?*J+p27JYGI^ET}mjE1rZT~l]KZBN4D]pKE{VT7iO#T1,-q:kTmjVZ{OQ7~=?[
+    Gu;VU^vJ_v>}DZ^C!v53Y!7QUG[KDE4mo\*zQ_5!Dv#QH2{ioYsb1),1-m]<@al_jiv~j<pLDQ.x
+    *]ax_=K7u^s?'j}l2z1I+,=$!-\Nnwsv]Ok*r@<z|jI<G=#(=rTu0Qu{3{5,{;TsJ1E[?1D?~b/o
+    =mw9>OJ;~>eu#_WoKTZ#Bp?r;AJ#bnX3Kl_Z{=WQ{0Ri[\OW;piT+rV,_!rs'KB=[H#G7!8aY,vf
+    PL1X;o9oWp'!rXT[<,'J_5X*G_3p#]_!p-Bl#{!~[^}<jJ[[DXQ\+RT$^j,7ZYzbB!pHp3J>Ee}o
+    Zw;RRz\}11?npe6oRvn2\Z~\wv!A'$z7E7w=~+vsB<p/e'oU=Y}BqwhF>x6'KnsEwR}+D#AV~<]w
+    v<7}-;o]r2E3+a=}ZWABYC^_pueWoVV~Iz-l=5,XU_G3Ql7Y5uX*1Zj1pT<kYu$7+aKul!-XsX<*
+    ^12F}?7RPJ^nwKUmRZo#TVR-v]nBe
+`endprotected
+endclass

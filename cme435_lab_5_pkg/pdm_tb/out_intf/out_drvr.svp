@@ -1,0 +1,34 @@
+`ifndef OUT_TYPES
+   `define OUT_TYPES
+   `include "out_intf/out_types.sv"
+`endif
+
+class out_drvr_c;
+   virtual out_intf_if.slave ports;
+   int     out_drvr_inst_num;
+
+   int proceed_delay_min = 0;
+   int proceed_delay_max = 0;
+   bit drive_two_proceed_cycles = 0;
+
+`protected
+    MTI!#,z#rI\e3''nno+~T}w-nV<1OIirm[HW[No;pl=;oJA_In7@o;rxT1YnVTZT@m[;eVBt1@ZI
+    YT=QZXJ[j@wOeUR}Y>~,W=H*QBKs}v>Z[X}JQMV=<EYis?p973Ea|ZQ]jAGZH\RA*v^}B.Y-pT*;
+    8Ar,=_$#->E{pm]W^Ar<Dz3~wlXr?jBQ@'WT_*U},>]BpQGiA{+oJDo!{Q[u[uE;7qqOvlTI22?u
+    E;w$}X=Xv<u{5\l5-'1KT@K=zT}<UUBAUv1iCBp|2\YZaVOGw*']=JR?jwAJ|R_zrZ^_B}lw$s?7
+    ^@5<Y=1C@JRk^vlO}~UW3Vp[2Y5I,iYnCv|a];!Ble+'l^[9V1iAov[?cAn>mG#O-f(7}X\I\m>G
+    jjrw9=1GI[K5{3}7H?=j-cRI}Y*>^{?s?{GjY\<whk7s]vV@kC7?JJVQ[Cr!ZqNwnZB{',vAs#UO
+    7'roCQB[zIrB<I,:q^2UXE{Q*UT@]l^e[sG_@Ba17jE=]dEKnexED]cQzUY;R+G=Om'\'['\VmAu
+    XEDyKtis;U_Xvui{ZGo;l*.\W<DEW1![m1]DwG1;7#}=T1]>+C[dek>K6>jJ2B;5Qe*$H%vkHAB]
+    7{GTsfBm+st{+op2'}zB+l2IK<QBpo<9OrX@,O2v~][Ov-{-MlXuU>IsiQ$'}T1~1soI!?EV7H}D
+    ,-wTjYRACUeK~}ZB53w]Gn=AQzsaV7s,kQ@lE+Q~7^ok='R?+P9MkB{2\CW+_W_Uee{+3R*<z,^[
+    X[+<'[?QKBD?EO{I]_*2$5[eQ5Q\*m!u@U,OkG*53xE$U6i7u*Ig_2V**m[5:'Yi37,~^BOQESU$
+    GKZ{W3^<2o<QskuDm#Ps!>IC2}5W+a@-5I5GaK7Z*}<]]xA5~Y-'O1s;alaGZ5Rks<?1X1E=3l5I
+    Kxe[v1]U$x{V#_*=a1*xkX79<IAH6^x@Y31'j<aa2I6z?N3[>@[*Bk1;-HYx]{V@*[-sII$G<$]z
+    #ox>15$@m!&r5<1A8xIw-JGT2I_x^75xkh{'AW+Am}wTu!B_E[}Yor]Y\Y3A71*kIOD(k+{lsenm
+    iC25ZXVX\uT\BO<A<*lK[X}V$1p?po<]4EDx^7im_$nY_I3wop,WHZaxA>G>1AHz5k(ewli:T$7<
+    FCK<mYY,wR[
+`endprotected
+
+endclass
+
