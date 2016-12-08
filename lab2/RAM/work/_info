@@ -1,0 +1,282 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/xiw031/engr-ece/CME435/lab2/RAM
+vcomputational_unit
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+!s85 0
+31
+!i10b 1
+!s100 M<CbRZXQ4dL3Lk<4D:OmJ1
+I[e@N=Sz9I8lZ57F=0<LAJ2
+R0
+w1450675080
+8computational_unit.v
+Fcomputational_unit.v
+L0 4
+Z2 OE;L;10.3a;59
+Z3 !s108 1476228977.463955
+Z4 !s107 program_sequencer.v|microprocessor.v|instruction_decoder.v|computational_unit.v|Data_Memory_RAM.v|
+Z5 !s90 -reportprogress|300|Data_Memory_RAM.v|computational_unit.v|instruction_decoder.v|microprocessor.v|program_sequencer.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vData_Memory_RAM
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 nFd9AZazcb:iO5Zd=1YdB0
+IaQ_2M8f?Zn6nEI1ef90@10
+R0
+w1316619446
+8Data_Memory_RAM.v
+FData_Memory_RAM.v
+L0 1
+R2
+R3
+R4
+R5
+!i113 0
+R6
+n@data_@memory_@r@a@m
+venv_m
+Z7 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 hEE29Umc9aAFE2==m4geB0
+Iz1BIJlDkG6aUN;6k7Ai=a0
+!s105 env_sv_unit
+S1
+R0
+w1476059602
+8env.sv
+Fenv.sv
+L0 10
+R2
+!s108 1476228977.682961
+!s107 Timing.vh|env.sv|
+!s90 -reportprogress|300|env.sv|
+!i113 0
+R6
+vinput_drvr_m
+R7
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 [ChUgEignQIdiR_k^g;<d2
+I5gX<:ZA<LmG1lT=hYNg]F0
+!s105 input_drvr_sv_unit
+S1
+R0
+w1476059727
+8input_intf/input_drvr.sv
+Finput_intf/input_drvr.sv
+L0 3
+R2
+Z8 !s108 1476228977.235323
+Z9 !s107 input_intf/input_types.sv|input_intf/input_intf.sv|input_intf/input_drvr.sv|
+Z10 !s90 -reportprogress|300|input_intf/input_drvr.sv|input_intf/input_intf.sv|input_intf/input_types.sv|
+!i113 0
+R6
+Yinput_intf_i
+R7
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 _7FBjXf2=zI5_JzCA16d<2
+IXLlB[?z0DP@`h@PFTCXlV0
+!s105 input_intf_sv_unit
+S1
+R0
+w1476059783
+8input_intf/input_intf.sv
+Finput_intf/input_intf.sv
+L0 3
+R2
+R8
+R9
+R10
+!i113 0
+R6
+vinstruction_decoder
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 BdcfQY8aVnSMNmd3DL`[T0
+IYKLZ5^dJ[D>7lY1;CRDF32
+R0
+Z11 w1450674859
+8instruction_decoder.v
+Finstruction_decoder.v
+L0 1
+R2
+R3
+R4
+R5
+!i113 0
+R6
+vmicroprocessor
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 HY0YzeG16?4BcRRAOmS_93
+IYaC_:UV76CPLa`ijCWQcC3
+R0
+w1476059507
+8microprocessor.v
+Fmicroprocessor.v
+L0 1
+R2
+R3
+R4
+R5
+!i113 0
+R6
+Youtput_intf_i
+R7
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 mU4@a[`=@YLUVEGif]ic82
+Ion8eZ@RkEI@`5d`0zXOKc2
+!s105 output_intf_sv_unit
+S1
+R0
+w1476059841
+8output_intf/output_intf.sv
+Foutput_intf/output_intf.sv
+L0 3
+R2
+Z12 !s108 1476228977.390792
+Z13 !s107 output_intf/output_types.sv|output_intf/output_mon.sv|output_intf/output_intf.sv|
+Z14 !s90 -reportprogress|300|output_intf/output_intf.sv|output_intf/output_mon.sv|output_intf/output_types.sv|
+!i113 0
+R6
+voutput_mon_s
+R7
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 92mfZ]_jeB7H@Hcd^N2O>0
+IL:SlR0Dhla:D]53I8Q1I40
+!s105 output_mon_sv_unit
+S1
+R0
+w1476059892
+8output_intf/output_mon.sv
+Foutput_intf/output_mon.sv
+L0 3
+R2
+R12
+R13
+R14
+!i113 0
+R6
+vprogram_memory
+R7
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 =VfUnT79LXmjYA8?kB>_I0
+Ia]Xa73k]Y5nZK?RH[X4AG1
+!s105 program_memory_sv_unit
+S1
+R0
+w1476059395
+8program_memory.sv
+Fprogram_memory.sv
+L0 1
+R2
+!s108 1476228977.611946
+!s107 program_memory.sv|
+!s90 -reportprogress|300|program_memory.sv|
+!i113 0
+R6
+vprogram_sequencer
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 mLfeIk;=kEZ:ZG^Ubk93;1
+IE?WcN?SFjdCQZmZd3AeRF1
+R0
+R11
+8program_sequencer.v
+Fprogram_sequencer.v
+L0 1
+R2
+R3
+R4
+R5
+!i113 0
+R6
+4test_program
+R7
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 fOC:b6cS8EAlgbj<BhV1z2
+I6C;B4HlLWeKnYki4M7KYT1
+Z15 !s105 test_sv_unit
+S1
+R0
+Z16 w1476062992
+Z17 8test.sv
+Z18 Ftest.sv
+L0 13
+R2
+Z19 !s108 1476228984.747485
+Z20 !s107 Timing.vh|test.sv|
+Z21 !s90 -reportprogress|300|test.sv|
+!i113 0
+R6
+vtop
+R7
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 o?Ho=nbH5G4:h?4@MN5fT1
+IY_^RBnGNGMj[L_J_K:4:12
+R15
+S1
+R0
+R16
+R17
+R18
+L0 5
+R2
+R19
+R20
+R21
+!i113 0
+R6

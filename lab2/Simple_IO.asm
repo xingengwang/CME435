@@ -1,0 +1,2 @@
+	MOV X0, I_PINS
+	MOV OREG, X0

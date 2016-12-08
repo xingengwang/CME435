@@ -1,0 +1,1833 @@
+# //  Questa Sim
+# //  Version 10.3a linux Apr 13 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+pwd
+# /home/xiw031/engr-ece/CME435/lab2/RAM
+ls
+# compile_all.do
+# computational_unit.v
+# Data_Memory_RAM.v
+# env.sv
+# input_intf
+# instruction_decoder.v
+# microprocessor.v
+# output_intf
+# program_memory.sv
+# program_sequencer.v
+# RAM_READ.png
+# RAM_test.asm
+# RAM_WRITE.png
+# run_test.do
+# test.sv
+# Timing.vh
+# transcript
+# vsim.wlf
+# wave.do
+# work
+do compile_all.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 18:58:40 on Oct 09,2016
+# vlog -reportprogress 300 input_intf/input_drvr.sv input_intf/input_intf.sv input_intf/input_types.sv 
+# -- Compiling module input_drvr_m
+# -- Compiling interface input_intf_i
+# 
+# Top level modules:
+# 	input_drvr_m
+# End time: 18:58:40 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 18:58:40 on Oct 09,2016
+# vlog -reportprogress 300 output_intf/output_intf.sv output_intf/output_mon.sv output_intf/output_types.sv 
+# -- Compiling interface output_intf_i
+# -- Compiling module output_mon_s
+# 
+# Top level modules:
+# 	output_mon_s
+# End time: 18:58:40 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 18:58:40 on Oct 09,2016
+# vlog -reportprogress 300 Data_Memory_RAM.v computational_unit.v instruction_decoder.v microprocessor.v program_sequencer.v 
+# -- Compiling module Data_Memory_RAM
+# -- Compiling module computational_unit
+# -- Compiling module instruction_decoder
+# -- Compiling module microprocessor
+# -- Compiling module program_sequencer
+# 
+# Top level modules:
+# 	microprocessor
+# End time: 18:58:40 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 18:58:40 on Oct 09,2016
+# vlog -reportprogress 300 program_memory.sv 
+# -- Compiling module program_memory
+# 
+# Top level modules:
+# 	program_memory
+# End time: 18:58:40 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 18:58:40 on Oct 09,2016
+# vlog -reportprogress 300 env.sv 
+# -- Compiling module env_m
+# 
+# Top level modules:
+# 	env_m
+# End time: 18:58:41 on Oct 09,2016, Elapsed time: 0: 0: 1
+# Errors: 0, Warnings: 0
+do run_test.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 18:59:01 on Oct 09,2016
+# vlog -reportprogress 300 test.sv 
+# -- Compiling module top
+# -- Compiling program test_program
+# 
+# Top level modules:
+# 	top
+# End time: 18:59:01 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# vsim -novopt work.top
+# Start time: 18:59:01 on Oct 09,2016
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.top
+# Loading sv_std.std
+# Loading work.top
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.env_m
+# Loading work.env_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_intf_i
+# Loading work.input_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_drvr_m
+# Loading work.input_drvr_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_intf_i
+# Loading work.output_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_mon_s
+# Loading work.output_mon_s
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.microprocessor
+# Loading work.microprocessor
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_memory
+# Loading work.program_memory
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.instruction_decoder
+# Loading work.instruction_decoder
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_sequencer
+# Loading work.program_sequencer
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.computational_unit
+# Loading work.computational_unit
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.Data_Memory_RAM
+# Loading work.Data_Memory_RAM
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.test_program
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Error: (vsim-3043) test.sv(31): Unresolved reference to 'microprocessor_signal' in env.input_drvr.microprocessor_signal.
+#         Region: /top/test
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run_test.do PAUSED at line 2
+do run_test.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 18:59:13 on Oct 09,2016
+# vlog -reportprogress 300 test.sv 
+# -- Compiling module top
+# -- Compiling program test_program
+# 
+# Top level modules:
+# 	top
+# End time: 18:59:13 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# vsim -novopt work.top
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.top
+# Loading sv_std.std
+# Loading work.top
+# Loading work.env_m
+# Loading work.input_intf_i
+# Loading work.input_drvr_m
+# Loading work.output_intf_i
+# Loading work.output_mon_s
+# Loading work.microprocessor
+# Loading work.program_memory
+# Loading work.instruction_decoder
+# Loading work.program_sequencer
+# Loading work.computational_unit
+# Loading work.Data_Memory_RAM
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.test_program
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Error: (vsim-3043) test.sv(31): Unresolved reference to 'microprocessor_signal' in env.input_drvr.microprocessor_signal.
+#         Region: /top/test
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run_test.do PAUSED at line 2
+vlib work
+do compile_all.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 18:59:52 on Oct 09,2016
+# vlog -reportprogress 300 input_intf/input_drvr.sv input_intf/input_intf.sv input_intf/input_types.sv 
+# -- Compiling module input_drvr_m
+# -- Compiling interface input_intf_i
+# 
+# Top level modules:
+# 	input_drvr_m
+# End time: 18:59:52 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 18:59:52 on Oct 09,2016
+# vlog -reportprogress 300 output_intf/output_intf.sv output_intf/output_mon.sv output_intf/output_types.sv 
+# -- Compiling interface output_intf_i
+# -- Compiling module output_mon_s
+# 
+# Top level modules:
+# 	output_mon_s
+# End time: 18:59:52 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 18:59:52 on Oct 09,2016
+# vlog -reportprogress 300 Data_Memory_RAM.v computational_unit.v instruction_decoder.v microprocessor.v program_sequencer.v 
+# -- Compiling module Data_Memory_RAM
+# -- Compiling module computational_unit
+# -- Compiling module instruction_decoder
+# -- Compiling module microprocessor
+# -- Compiling module program_sequencer
+# 
+# Top level modules:
+# 	microprocessor
+# End time: 18:59:52 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 18:59:52 on Oct 09,2016
+# vlog -reportprogress 300 program_memory.sv 
+# -- Compiling module program_memory
+# 
+# Top level modules:
+# 	program_memory
+# End time: 18:59:52 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 18:59:52 on Oct 09,2016
+# vlog -reportprogress 300 env.sv 
+# -- Compiling module env_m
+# 
+# Top level modules:
+# 	env_m
+# End time: 18:59:52 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+do run_test.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 18:59:56 on Oct 09,2016
+# vlog -reportprogress 300 test.sv 
+# -- Compiling module top
+# -- Compiling program test_program
+# 
+# Top level modules:
+# 	top
+# End time: 18:59:56 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# vsim -novopt work.top
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.top
+# Loading sv_std.std
+# Loading work.top
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.env_m
+# Loading work.env_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_intf_i
+# Loading work.input_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_drvr_m
+# Loading work.input_drvr_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_intf_i
+# Loading work.output_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_mon_s
+# Loading work.output_mon_s
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.microprocessor
+# Loading work.microprocessor
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_memory
+# Loading work.program_memory
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.instruction_decoder
+# Loading work.instruction_decoder
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_sequencer
+# Loading work.program_sequencer
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.computational_unit
+# Loading work.computational_unit
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.Data_Memory_RAM
+# Loading work.Data_Memory_RAM
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.test_program
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Error: (vsim-3043) test.sv(31): Unresolved reference to 'microprocessor_signal' in env.input_drvr.microprocessor_signal.
+#         Region: /top/test
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run_test.do PAUSED at line 2
+ls
+# compile_all.do
+# computational_unit.v
+# Data_Memory_RAM.v
+# env.sv
+# input_intf
+# instruction_decoder.v
+# microprocessor.v
+# output_intf
+# program_memory.sv
+# program_sequencer.v
+# RAM_READ.png
+# RAM_test.asm
+# RAM_WRITE.png
+# run_test.do
+# test.sv
+# Timing.vh
+# transcript
+# vsim.wlf
+# wave.do
+# work
+do compile_all.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:01:41 on Oct 09,2016
+# vlog -reportprogress 300 input_intf/input_drvr.sv input_intf/input_intf.sv input_intf/input_types.sv 
+# -- Compiling module input_drvr_m
+# -- Compiling interface input_intf_i
+# 
+# Top level modules:
+# 	input_drvr_m
+# End time: 19:01:41 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:01:41 on Oct 09,2016
+# vlog -reportprogress 300 output_intf/output_intf.sv output_intf/output_mon.sv output_intf/output_types.sv 
+# -- Compiling interface output_intf_i
+# -- Compiling module output_mon_s
+# 
+# Top level modules:
+# 	output_mon_s
+# End time: 19:01:41 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:01:41 on Oct 09,2016
+# vlog -reportprogress 300 Data_Memory_RAM.v computational_unit.v instruction_decoder.v microprocessor.v program_sequencer.v 
+# -- Compiling module Data_Memory_RAM
+# -- Compiling module computational_unit
+# -- Compiling module instruction_decoder
+# -- Compiling module microprocessor
+# -- Compiling module program_sequencer
+# 
+# Top level modules:
+# 	microprocessor
+# End time: 19:01:41 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:01:41 on Oct 09,2016
+# vlog -reportprogress 300 program_memory.sv 
+# -- Compiling module program_memory
+# 
+# Top level modules:
+# 	program_memory
+# End time: 19:01:41 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:01:41 on Oct 09,2016
+# vlog -reportprogress 300 env.sv 
+# -- Compiling module env_m
+# 
+# Top level modules:
+# 	env_m
+# End time: 19:01:41 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+do run_test.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:05:19 on Oct 09,2016
+# vlog -reportprogress 300 test.sv 
+# -- Compiling module top
+# -- Compiling program test_program
+# 
+# Top level modules:
+# 	top
+# End time: 19:05:20 on Oct 09,2016, Elapsed time: 0: 0: 1
+# Errors: 0, Warnings: 0
+# vsim -novopt work.top
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.top
+# Loading sv_std.std
+# Loading work.top
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.env_m
+# Loading work.env_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_intf_i
+# Loading work.input_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_drvr_m
+# Loading work.input_drvr_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_intf_i
+# Loading work.output_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_mon_s
+# Loading work.output_mon_s
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.microprocessor
+# Loading work.microprocessor
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_memory
+# Loading work.program_memory
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.instruction_decoder
+# Loading work.instruction_decoder
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_sequencer
+# Loading work.program_sequencer
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.computational_unit
+# Loading work.computational_unit
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.Data_Memory_RAM
+# Loading work.Data_Memory_RAM
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.test_program
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Error: (vsim-3043) test.sv(31): Unresolved reference to 'microprocessor_signal' in env.input_drvr.microprocessor_signal.
+#         Region: /top/test
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run_test.do PAUSED at line 2
+do compile_all.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:06:43 on Oct 09,2016
+# vlog -reportprogress 300 input_intf/input_drvr.sv input_intf/input_intf.sv input_intf/input_types.sv 
+# -- Compiling module input_drvr_m
+# -- Compiling interface input_intf_i
+# 
+# Top level modules:
+# 	input_drvr_m
+# End time: 19:06:43 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:06:43 on Oct 09,2016
+# vlog -reportprogress 300 output_intf/output_intf.sv output_intf/output_mon.sv output_intf/output_types.sv 
+# -- Compiling interface output_intf_i
+# -- Compiling module output_mon_s
+# 
+# Top level modules:
+# 	output_mon_s
+# End time: 19:06:43 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:06:43 on Oct 09,2016
+# vlog -reportprogress 300 Data_Memory_RAM.v computational_unit.v instruction_decoder.v microprocessor.v program_sequencer.v 
+# -- Compiling module Data_Memory_RAM
+# -- Compiling module computational_unit
+# -- Compiling module instruction_decoder
+# -- Compiling module microprocessor
+# -- Compiling module program_sequencer
+# 
+# Top level modules:
+# 	microprocessor
+# End time: 19:06:43 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:06:43 on Oct 09,2016
+# vlog -reportprogress 300 program_memory.sv 
+# -- Compiling module program_memory
+# 
+# Top level modules:
+# 	program_memory
+# End time: 19:06:43 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:06:43 on Oct 09,2016
+# vlog -reportprogress 300 env.sv 
+# -- Compiling module env_m
+# 
+# Top level modules:
+# 	env_m
+# End time: 19:06:43 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+do run_test.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:06:46 on Oct 09,2016
+# vlog -reportprogress 300 test.sv 
+# -- Compiling module top
+# -- Compiling program test_program
+# 
+# Top level modules:
+# 	top
+# End time: 19:06:46 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# vsim -novopt work.top
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.top
+# Loading sv_std.std
+# Loading work.top
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.env_m
+# Loading work.env_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_intf_i
+# Loading work.input_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_drvr_m
+# Loading work.input_drvr_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_intf_i
+# Loading work.output_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_mon_s
+# Loading work.output_mon_s
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.microprocessor
+# Loading work.microprocessor
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_memory
+# Loading work.program_memory
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.instruction_decoder
+# Loading work.instruction_decoder
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_sequencer
+# Loading work.program_sequencer
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.computational_unit
+# Loading work.computational_unit
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.Data_Memory_RAM
+# Loading work.Data_Memory_RAM
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.test_program
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.top
+# Loading work.env_m
+# Loading work.input_intf_i
+# Loading work.input_drvr_m
+# Loading work.output_intf_i
+# Loading work.output_mon_s
+# Loading work.program_memory
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+add wave -position insertpoint  \
+sim:/top/env/output_mon/get_o_reg/o_reg
+add wave  \
+sim:/top/env/clk
+add wave -position insertpoint  \
+sim:/top/env/GOLD/o_reg
+add wave -position insertpoint  \
+sim:/top/env/GOLD/i_pins
+add wave -position insertpoint  \
+sim:/top/env/GOLD/clk
+add wave -position insertpoint  \
+sim:/top/env/GOLD/reset
+# Can't move the Now cursor.
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/xiw031/engr-ece/CME435/lab2/RAM/wave.do
+quit -sim
+# End time: 19:09:15 on Oct 09,2016, Elapsed time: 0:10:14
+do compile_all.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:09:21 on Oct 09,2016
+# vlog -reportprogress 300 input_intf/input_drvr.sv input_intf/input_intf.sv input_intf/input_types.sv 
+# -- Compiling module input_drvr_m
+# -- Compiling interface input_intf_i
+# 
+# Top level modules:
+# 	input_drvr_m
+# End time: 19:09:21 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:09:21 on Oct 09,2016
+# vlog -reportprogress 300 output_intf/output_intf.sv output_intf/output_mon.sv output_intf/output_types.sv 
+# -- Compiling interface output_intf_i
+# -- Compiling module output_mon_s
+# 
+# Top level modules:
+# 	output_mon_s
+# End time: 19:09:22 on Oct 09,2016, Elapsed time: 0: 0: 1
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:09:22 on Oct 09,2016
+# vlog -reportprogress 300 Data_Memory_RAM.v computational_unit.v instruction_decoder.v microprocessor.v program_sequencer.v 
+# -- Compiling module Data_Memory_RAM
+# -- Compiling module computational_unit
+# -- Compiling module instruction_decoder
+# -- Compiling module microprocessor
+# -- Compiling module program_sequencer
+# 
+# Top level modules:
+# 	microprocessor
+# End time: 19:09:22 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:09:22 on Oct 09,2016
+# vlog -reportprogress 300 program_memory.sv 
+# -- Compiling module program_memory
+# 
+# Top level modules:
+# 	program_memory
+# End time: 19:09:22 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:09:22 on Oct 09,2016
+# vlog -reportprogress 300 env.sv 
+# -- Compiling module env_m
+# 
+# Top level modules:
+# 	env_m
+# End time: 19:09:22 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+do run_test.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:09:28 on Oct 09,2016
+# vlog -reportprogress 300 test.sv 
+# -- Compiling module top
+# -- Compiling program test_program
+# 
+# Top level modules:
+# 	top
+# End time: 19:09:28 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# vsim -novopt work.top
+# Start time: 19:09:28 on Oct 09,2016
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.top
+# Loading sv_std.std
+# Loading work.top
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.env_m
+# Loading work.env_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_intf_i
+# Loading work.input_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_drvr_m
+# Loading work.input_drvr_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_intf_i
+# Loading work.output_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_mon_s
+# Loading work.output_mon_s
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.microprocessor
+# Loading work.microprocessor
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_memory
+# Loading work.program_memory
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.instruction_decoder
+# Loading work.instruction_decoder
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_sequencer
+# Loading work.program_sequencer
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.computational_unit
+# Loading work.computational_unit
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.Data_Memory_RAM
+# Loading work.Data_Memory_RAM
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.test_program
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.top
+# Loading work.env_m
+# Loading work.input_intf_i
+# Loading work.input_drvr_m
+# Loading work.output_intf_i
+# Loading work.output_mon_s
+# Loading work.program_memory
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+run -all
+# Causality operation skipped due to absence of debug database file
+do compile_all.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:10:07 on Oct 09,2016
+# vlog -reportprogress 300 input_intf/input_drvr.sv input_intf/input_intf.sv input_intf/input_types.sv 
+# -- Compiling module input_drvr_m
+# -- Compiling interface input_intf_i
+# 
+# Top level modules:
+# 	input_drvr_m
+# End time: 19:10:07 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:10:07 on Oct 09,2016
+# vlog -reportprogress 300 output_intf/output_intf.sv output_intf/output_mon.sv output_intf/output_types.sv 
+# -- Compiling interface output_intf_i
+# -- Compiling module output_mon_s
+# 
+# Top level modules:
+# 	output_mon_s
+# End time: 19:10:07 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:10:07 on Oct 09,2016
+# vlog -reportprogress 300 Data_Memory_RAM.v computational_unit.v instruction_decoder.v microprocessor.v program_sequencer.v 
+# -- Compiling module Data_Memory_RAM
+# -- Compiling module computational_unit
+# -- Compiling module instruction_decoder
+# -- Compiling module microprocessor
+# -- Compiling module program_sequencer
+# 
+# Top level modules:
+# 	microprocessor
+# End time: 19:10:07 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:10:07 on Oct 09,2016
+# vlog -reportprogress 300 program_memory.sv 
+# -- Compiling module program_memory
+# 
+# Top level modules:
+# 	program_memory
+# End time: 19:10:07 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:10:07 on Oct 09,2016
+# vlog -reportprogress 300 env.sv 
+# -- Compiling module env_m
+# 
+# Top level modules:
+# 	env_m
+# End time: 19:10:07 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+do run_test.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:10:10 on Oct 09,2016
+# vlog -reportprogress 300 test.sv 
+# -- Compiling module top
+# -- Compiling program test_program
+# 
+# Top level modules:
+# 	top
+# End time: 19:10:10 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# vsim -novopt work.top
+# Simulation ended at 21041852000ms
+# End time: 19:10:11 on Oct 09,2016, Elapsed time: 0: 0:43
+# Start time: 19:10:11 on Oct 09,2016
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.top
+# Loading sv_std.std
+# Loading work.top
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.env_m
+# Loading work.env_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_intf_i
+# Loading work.input_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_drvr_m
+# Loading work.input_drvr_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_intf_i
+# Loading work.output_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_mon_s
+# Loading work.output_mon_s
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.microprocessor
+# Loading work.microprocessor
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_memory
+# Loading work.program_memory
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.instruction_decoder
+# Loading work.instruction_decoder
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_sequencer
+# Loading work.program_sequencer
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.computational_unit
+# Loading work.computational_unit
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.Data_Memory_RAM
+# Loading work.Data_Memory_RAM
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.test_program
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.top
+# Loading work.env_m
+# Loading work.input_intf_i
+# Loading work.input_drvr_m
+# Loading work.output_intf_i
+# Loading work.output_mon_s
+# Loading work.program_memory
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+run -all
+do compile_all.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:12:22 on Oct 09,2016
+# vlog -reportprogress 300 input_intf/input_drvr.sv input_intf/input_intf.sv input_intf/input_types.sv 
+# -- Compiling module input_drvr_m
+# -- Compiling interface input_intf_i
+# 
+# Top level modules:
+# 	input_drvr_m
+# End time: 19:12:22 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:12:22 on Oct 09,2016
+# vlog -reportprogress 300 output_intf/output_intf.sv output_intf/output_mon.sv output_intf/output_types.sv 
+# -- Compiling interface output_intf_i
+# -- Compiling module output_mon_s
+# 
+# Top level modules:
+# 	output_mon_s
+# End time: 19:12:22 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:12:22 on Oct 09,2016
+# vlog -reportprogress 300 Data_Memory_RAM.v computational_unit.v instruction_decoder.v microprocessor.v program_sequencer.v 
+# -- Compiling module Data_Memory_RAM
+# -- Compiling module computational_unit
+# -- Compiling module instruction_decoder
+# -- Compiling module microprocessor
+# -- Compiling module program_sequencer
+# 
+# Top level modules:
+# 	microprocessor
+# End time: 19:12:22 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:12:22 on Oct 09,2016
+# vlog -reportprogress 300 program_memory.sv 
+# -- Compiling module program_memory
+# 
+# Top level modules:
+# 	program_memory
+# End time: 19:12:22 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:12:22 on Oct 09,2016
+# vlog -reportprogress 300 env.sv 
+# -- Compiling module env_m
+# 
+# Top level modules:
+# 	env_m
+# End time: 19:12:22 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+do run_test.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:12:25 on Oct 09,2016
+# vlog -reportprogress 300 test.sv 
+# -- Compiling module top
+# -- Compiling program test_program
+# 
+# Top level modules:
+# 	top
+# End time: 19:12:25 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# vsim -novopt work.top
+# Simulation ended at 142430092000ms
+# End time: 19:12:25 on Oct 09,2016, Elapsed time: 0: 2:14
+# Start time: 19:12:25 on Oct 09,2016
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.top
+# Loading sv_std.std
+# Loading work.top
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.env_m
+# Loading work.env_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_intf_i
+# Loading work.input_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_drvr_m
+# Loading work.input_drvr_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_intf_i
+# Loading work.output_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_mon_s
+# Loading work.output_mon_s
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.microprocessor
+# Loading work.microprocessor
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_memory
+# Loading work.program_memory
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.instruction_decoder
+# Loading work.instruction_decoder
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_sequencer
+# Loading work.program_sequencer
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.computational_unit
+# Loading work.computational_unit
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.Data_Memory_RAM
+# Loading work.Data_Memory_RAM
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.test_program
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.top
+# Loading work.env_m
+# Loading work.input_intf_i
+# Loading work.input_drvr_m
+# Loading work.output_intf_i
+# Loading work.output_mon_s
+# Loading work.program_memory
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+run -all
+quit -sim
+# Simulation ended at 7220605000ms
+# End time: 19:16:37 on Oct 09,2016, Elapsed time: 0: 4:12
+cd ..
+cd ..
+cd ..
+pwd
+# /home/xiw031/engr-ece
+ls
+# CME433
+# CME435
+# cmpt332
+# Desktop
+# Documents
+# Downloads
+# icetean_config
+# Music
+# new_policy
+# Pictures
+# Public
+# Templates
+# transcript
+# Videos
+cd Downloads
+ls
+# a1p2
+# a1p2.zip
+# a1-phase1.tar
+# Assignment_2.tar
+# cme435_lab_1_pkg
+# CME_435_Lab_2_handin_Yuchen_Lin_yul761_11138672.tar
+# Lab_2
+# randcase.sv
+# tnf774_CME435_LAB1
+# tnf774_CME435_LAB1.zip
+cd Lab_2
+ls
+# CME435_Testplan_Template(yul761).xls
+# compile_all.do
+# computationa_unit.v
+# env.sv
+# input_intf
+# Instruction_Decoder.v
+# Lab_2_full_size_wave.png
+# Lab_2.mpf
+# Lab_2_one_period.png
+# microprocessor.v
+# output_intf
+# Program_sequencer.v
+# RAM_test.asm
+# RAM.v
+# rom.sv
+# run_test.do
+# test.sv
+# test.sv.bak
+# Timing.vh
+# vsim.wlf
+# wave.do
+# work
+do compile_all.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:17:27 on Oct 09,2016
+# vlog -reportprogress 300 input_intf/input_drvr.sv input_intf/input_intf.sv input_intf/input_types.sv 
+# -- Compiling module input_drvr_m
+# -- Compiling interface input_intf_i
+# 
+# Top level modules:
+# 	input_drvr_m
+# End time: 19:17:27 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:17:27 on Oct 09,2016
+# vlog -reportprogress 300 output_intf/output_intf.sv output_intf/output_mon.sv output_intf/output_types.sv 
+# -- Compiling interface output_intf_i
+# -- Compiling module output_mon_s
+# 
+# Top level modules:
+# 	output_mon_s
+# End time: 19:17:27 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:17:27 on Oct 09,2016
+# vlog -reportprogress 300 computationa_unit.v 
+# -- Compiling module computationa_unit
+# 
+# Top level modules:
+# 	computationa_unit
+# End time: 19:17:27 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:17:27 on Oct 09,2016
+# vlog -reportprogress 300 Instruction_Decoder.v 
+# -- Compiling module Instruction_Decoder
+# 
+# Top level modules:
+# 	Instruction_Decoder
+# End time: 19:17:27 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:17:27 on Oct 09,2016
+# vlog -reportprogress 300 microprocessor.v 
+# -- Compiling module microprocessor
+# 
+# Top level modules:
+# 	microprocessor
+# End time: 19:17:27 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:17:27 on Oct 09,2016
+# vlog -reportprogress 300 Program_sequencer.v 
+# -- Compiling module Program_sequencer
+# 
+# Top level modules:
+# 	Program_sequencer
+# End time: 19:17:27 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:17:27 on Oct 09,2016
+# vlog -reportprogress 300 rom.sv 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 19:17:27 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:17:27 on Oct 09,2016
+# vlog -reportprogress 300 RAM.v 
+# -- Compiling module RAM
+# 
+# Top level modules:
+# 	RAM
+# End time: 19:17:27 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:17:27 on Oct 09,2016
+# vlog -reportprogress 300 env.sv 
+# -- Compiling module env_m
+# 
+# Top level modules:
+# 	env_m
+# End time: 19:17:27 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+do run_test.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:17:32 on Oct 09,2016
+# vlog -reportprogress 300 test.sv 
+# -- Compiling module top
+# -- Compiling program test_program
+# ** Warning: test.sv(24): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: test.sv(28): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	top
+# End time: 19:17:32 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 2
+# vsim -novopt work.top
+# Start time: 19:17:32 on Oct 09,2016
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/xiw031/engr-ece/Downloads/Lab_2/work.top
+# Loading sv_std.std
+# Loading work.top
+# Refreshing /home/xiw031/engr-ece/Downloads/Lab_2/work.env_m
+# Loading work.env_m
+# Refreshing /home/xiw031/engr-ece/Downloads/Lab_2/work.input_intf_i
+# Loading work.input_intf_i
+# Refreshing /home/xiw031/engr-ece/Downloads/Lab_2/work.input_drvr_m
+# Loading work.input_drvr_m
+# Refreshing /home/xiw031/engr-ece/Downloads/Lab_2/work.output_intf_i
+# Loading work.output_intf_i
+# Refreshing /home/xiw031/engr-ece/Downloads/Lab_2/work.output_mon_s
+# Loading work.output_mon_s
+# Refreshing /home/xiw031/engr-ece/Downloads/Lab_2/work.microprocessor
+# Loading work.microprocessor
+# Refreshing /home/xiw031/engr-ece/Downloads/Lab_2/work.Instruction_Decoder
+# Loading work.Instruction_Decoder
+# Refreshing /home/xiw031/engr-ece/Downloads/Lab_2/work.Program_sequencer
+# Loading work.Program_sequencer
+# Refreshing /home/xiw031/engr-ece/Downloads/Lab_2/work.rom
+# Loading work.rom
+# Refreshing /home/xiw031/engr-ece/Downloads/Lab_2/work.computationa_unit
+# Loading work.computationa_unit
+# Refreshing /home/xiw031/engr-ece/Downloads/Lab_2/work.RAM
+# Loading work.RAM
+# Refreshing /home/xiw031/engr-ece/Downloads/Lab_2/work.test_program
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3015) microprocessor.v(44): [PCDPC] - Port size (1) does not match connection size (4) for port 'dont_jmp'. The port definition is at: Program_sequencer.v(3).
+#         Region: /top/env/GOLD/ps1
+# ** Warning: (vsim-3017) microprocessor.v(59): [TFMPC] - Too few port connections. Expected 26, found 21.
+#         Region: /top/env/GOLD/cmp_unit1
+# ** Warning: (vsim-3015) microprocessor.v(59): [PCDPC] - Port size (1) does not match connection size (4) for port 'r_eq_0'. The port definition is at: computationa_unit.v(5).
+#         Region: /top/env/GOLD/cmp_unit1
+# ** Warning: (vsim-3722) microprocessor.v(59): [TFMPC] - Missing connection for port 'alu_out'.
+# ** Warning: (vsim-3722) microprocessor.v(59): [TFMPC] - Missing connection for port 'alu_function'.
+# ** Warning: (vsim-3722) microprocessor.v(59): [TFMPC] - Missing connection for port 'alu_out_eq_0'.
+# ** Warning: (vsim-3722) microprocessor.v(59): [TFMPC] - Missing connection for port 'alu_x'.
+# ** Warning: (vsim-3722) microprocessor.v(59): [TFMPC] - Missing connection for port 'alu_y'.
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.top
+# Loading work.env_m
+# Loading work.input_intf_i
+# Loading work.input_drvr_m
+# Loading work.output_intf_i
+# Loading work.output_mon_s
+# Loading work.rom
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3015) microprocessor.v(44): [PCDPC] - Port size (1) does not match connection size (4) for port 'dont_jmp'. The port definition is at: Program_sequencer.v(3).
+#         Region: /top/env/GOLD/ps1
+# ** Warning: (vsim-3017) microprocessor.v(59): [TFMPC] - Too few port connections. Expected 26, found 21.
+#         Region: /top/env/GOLD/cmp_unit1
+# ** Warning: (vsim-3015) microprocessor.v(59): [PCDPC] - Port size (1) does not match connection size (4) for port 'r_eq_0'. The port definition is at: computationa_unit.v(5).
+#         Region: /top/env/GOLD/cmp_unit1
+# ** Warning: (vsim-3722) microprocessor.v(59): [TFMPC] - Missing connection for port 'alu_out'.
+# ** Warning: (vsim-3722) microprocessor.v(59): [TFMPC] - Missing connection for port 'alu_function'.
+# ** Warning: (vsim-3722) microprocessor.v(59): [TFMPC] - Missing connection for port 'alu_out_eq_0'.
+# ** Warning: (vsim-3722) microprocessor.v(59): [TFMPC] - Missing connection for port 'alu_x'.
+# ** Warning: (vsim-3722) microprocessor.v(59): [TFMPC] - Missing connection for port 'alu_y'.
+run -all
+# 1
+# Simulation stop requested.
+quit -sim
+# Simulation ended at 1357500ms
+# End time: 19:26:16 on Oct 09,2016, Elapsed time: 0: 8:44
+CD ..
+# invalid command name "CD"
+cd ..
+pwd
+# /home/xiw031/engr-ece/Downloads
+cd ..
+pwd
+# /home/xiw031/engr-ece
+cd CME435/lab2
+cd RAM
+do compile_all.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:26:55 on Oct 09,2016
+# vlog -reportprogress 300 input_intf/input_drvr.sv input_intf/input_intf.sv input_intf/input_types.sv 
+# -- Compiling module input_drvr_m
+# -- Compiling interface input_intf_i
+# 
+# Top level modules:
+# 	input_drvr_m
+# End time: 19:26:55 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:26:55 on Oct 09,2016
+# vlog -reportprogress 300 output_intf/output_intf.sv output_intf/output_mon.sv output_intf/output_types.sv 
+# -- Compiling interface output_intf_i
+# -- Compiling module output_mon_s
+# 
+# Top level modules:
+# 	output_mon_s
+# End time: 19:26:55 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:26:55 on Oct 09,2016
+# vlog -reportprogress 300 Data_Memory_RAM.v computational_unit.v instruction_decoder.v microprocessor.v program_sequencer.v 
+# -- Compiling module Data_Memory_RAM
+# -- Compiling module computational_unit
+# -- Compiling module instruction_decoder
+# -- Compiling module microprocessor
+# -- Compiling module program_sequencer
+# 
+# Top level modules:
+# 	microprocessor
+# End time: 19:26:55 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:26:55 on Oct 09,2016
+# vlog -reportprogress 300 program_memory.sv 
+# -- Compiling module program_memory
+# 
+# Top level modules:
+# 	program_memory
+# End time: 19:26:55 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:26:55 on Oct 09,2016
+# vlog -reportprogress 300 env.sv 
+# -- Compiling module env_m
+# 
+# Top level modules:
+# 	env_m
+# End time: 19:26:55 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+do run_test.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:27:02 on Oct 09,2016
+# vlog -reportprogress 300 test.sv 
+# -- Compiling module top
+# -- Compiling program test_program
+# ** Warning: test.sv(31): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	top
+# End time: 19:27:02 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 1
+# vsim -novopt work.top
+# Start time: 19:27:02 on Oct 09,2016
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.top
+# Loading sv_std.std
+# Loading work.top
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.env_m
+# Loading work.env_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_intf_i
+# Loading work.input_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_drvr_m
+# Loading work.input_drvr_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_intf_i
+# Loading work.output_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_mon_s
+# Loading work.output_mon_s
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.microprocessor
+# Loading work.microprocessor
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_memory
+# Loading work.program_memory
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.instruction_decoder
+# Loading work.instruction_decoder
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_sequencer
+# Loading work.program_sequencer
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.computational_unit
+# Loading work.computational_unit
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.Data_Memory_RAM
+# Loading work.Data_Memory_RAM
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.test_program
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.top
+# Loading work.env_m
+# Loading work.input_intf_i
+# Loading work.input_drvr_m
+# Loading work.output_intf_i
+# Loading work.output_mon_s
+# Loading work.program_memory
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+run -all
+do compile_all.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:28:03 on Oct 09,2016
+# vlog -reportprogress 300 input_intf/input_drvr.sv input_intf/input_intf.sv input_intf/input_types.sv 
+# -- Compiling module input_drvr_m
+# -- Compiling interface input_intf_i
+# 
+# Top level modules:
+# 	input_drvr_m
+# End time: 19:28:03 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:28:03 on Oct 09,2016
+# vlog -reportprogress 300 output_intf/output_intf.sv output_intf/output_mon.sv output_intf/output_types.sv 
+# -- Compiling interface output_intf_i
+# -- Compiling module output_mon_s
+# 
+# Top level modules:
+# 	output_mon_s
+# End time: 19:28:03 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:28:03 on Oct 09,2016
+# vlog -reportprogress 300 Data_Memory_RAM.v computational_unit.v instruction_decoder.v microprocessor.v program_sequencer.v 
+# -- Compiling module Data_Memory_RAM
+# -- Compiling module computational_unit
+# -- Compiling module instruction_decoder
+# -- Compiling module microprocessor
+# -- Compiling module program_sequencer
+# 
+# Top level modules:
+# 	microprocessor
+# End time: 19:28:03 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:28:03 on Oct 09,2016
+# vlog -reportprogress 300 program_memory.sv 
+# -- Compiling module program_memory
+# 
+# Top level modules:
+# 	program_memory
+# End time: 19:28:03 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:28:03 on Oct 09,2016
+# vlog -reportprogress 300 env.sv 
+# -- Compiling module env_m
+# 
+# Top level modules:
+# 	env_m
+# End time: 19:28:04 on Oct 09,2016, Elapsed time: 0: 0: 1
+# Errors: 0, Warnings: 0
+do run_test.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:28:05 on Oct 09,2016
+# vlog -reportprogress 300 test.sv 
+# -- Compiling module top
+# -- Compiling program test_program
+# ** Warning: test.sv(31): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	top
+# End time: 19:28:05 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 1
+# vsim -novopt work.top
+# Simulation ended at 10723050500ms
+# End time: 19:28:06 on Oct 09,2016, Elapsed time: 0: 1: 4
+# Start time: 19:28:06 on Oct 09,2016
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.top
+# Loading sv_std.std
+# Loading work.top
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.env_m
+# Loading work.env_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_intf_i
+# Loading work.input_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_drvr_m
+# Loading work.input_drvr_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_intf_i
+# Loading work.output_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_mon_s
+# Loading work.output_mon_s
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.microprocessor
+# Loading work.microprocessor
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_memory
+# Loading work.program_memory
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.instruction_decoder
+# Loading work.instruction_decoder
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_sequencer
+# Loading work.program_sequencer
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.computational_unit
+# Loading work.computational_unit
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.Data_Memory_RAM
+# Loading work.Data_Memory_RAM
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.test_program
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.top
+# Loading work.env_m
+# Loading work.input_intf_i
+# Loading work.input_drvr_m
+# Loading work.output_intf_i
+# Loading work.output_mon_s
+# Loading work.program_memory
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+run -all
+do compile_all.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:29:32 on Oct 09,2016
+# vlog -reportprogress 300 input_intf/input_drvr.sv input_intf/input_intf.sv input_intf/input_types.sv 
+# -- Compiling module input_drvr_m
+# -- Compiling interface input_intf_i
+# 
+# Top level modules:
+# 	input_drvr_m
+# End time: 19:29:32 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:29:32 on Oct 09,2016
+# vlog -reportprogress 300 output_intf/output_intf.sv output_intf/output_mon.sv output_intf/output_types.sv 
+# -- Compiling interface output_intf_i
+# -- Compiling module output_mon_s
+# 
+# Top level modules:
+# 	output_mon_s
+# End time: 19:29:32 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:29:32 on Oct 09,2016
+# vlog -reportprogress 300 Data_Memory_RAM.v computational_unit.v instruction_decoder.v microprocessor.v program_sequencer.v 
+# -- Compiling module Data_Memory_RAM
+# -- Compiling module computational_unit
+# -- Compiling module instruction_decoder
+# -- Compiling module microprocessor
+# -- Compiling module program_sequencer
+# 
+# Top level modules:
+# 	microprocessor
+# End time: 19:29:32 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:29:32 on Oct 09,2016
+# vlog -reportprogress 300 program_memory.sv 
+# -- Compiling module program_memory
+# 
+# Top level modules:
+# 	program_memory
+# End time: 19:29:32 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:29:32 on Oct 09,2016
+# vlog -reportprogress 300 env.sv 
+# -- Compiling module env_m
+# 
+# Top level modules:
+# 	env_m
+# End time: 19:29:32 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+do run_test.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:29:34 on Oct 09,2016
+# vlog -reportprogress 300 test.sv 
+# -- Compiling module top
+# -- Compiling program test_program
+# ** Warning: test.sv(36): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	top
+# End time: 19:29:34 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 1
+# vsim -novopt work.top
+# Simulation ended at 17344995500ms
+# End time: 19:29:34 on Oct 09,2016, Elapsed time: 0: 1:28
+# Start time: 19:29:34 on Oct 09,2016
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.top
+# Loading sv_std.std
+# Loading work.top
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.env_m
+# Loading work.env_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_intf_i
+# Loading work.input_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_drvr_m
+# Loading work.input_drvr_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_intf_i
+# Loading work.output_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_mon_s
+# Loading work.output_mon_s
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.microprocessor
+# Loading work.microprocessor
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_memory
+# Loading work.program_memory
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.instruction_decoder
+# Loading work.instruction_decoder
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_sequencer
+# Loading work.program_sequencer
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.computational_unit
+# Loading work.computational_unit
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.Data_Memory_RAM
+# Loading work.Data_Memory_RAM
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.test_program
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Error: (vsim-3043) test.sv(30): Unresolved reference to 'microprocessor_signal' in env.input_drvr.microprocessor_signal.
+#         Region: /top/test
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run_test.do PAUSED at line 2
+do compile_all.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:29:55 on Oct 09,2016
+# vlog -reportprogress 300 input_intf/input_drvr.sv input_intf/input_intf.sv input_intf/input_types.sv 
+# -- Compiling module input_drvr_m
+# -- Compiling interface input_intf_i
+# 
+# Top level modules:
+# 	input_drvr_m
+# End time: 19:29:55 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:29:55 on Oct 09,2016
+# vlog -reportprogress 300 output_intf/output_intf.sv output_intf/output_mon.sv output_intf/output_types.sv 
+# -- Compiling interface output_intf_i
+# -- Compiling module output_mon_s
+# 
+# Top level modules:
+# 	output_mon_s
+# End time: 19:29:55 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:29:55 on Oct 09,2016
+# vlog -reportprogress 300 Data_Memory_RAM.v computational_unit.v instruction_decoder.v microprocessor.v program_sequencer.v 
+# -- Compiling module Data_Memory_RAM
+# -- Compiling module computational_unit
+# -- Compiling module instruction_decoder
+# -- Compiling module microprocessor
+# -- Compiling module program_sequencer
+# 
+# Top level modules:
+# 	microprocessor
+# End time: 19:29:55 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:29:55 on Oct 09,2016
+# vlog -reportprogress 300 program_memory.sv 
+# -- Compiling module program_memory
+# 
+# Top level modules:
+# 	program_memory
+# End time: 19:29:55 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:29:55 on Oct 09,2016
+# vlog -reportprogress 300 env.sv 
+# -- Compiling module env_m
+# 
+# Top level modules:
+# 	env_m
+# End time: 19:29:56 on Oct 09,2016, Elapsed time: 0: 0: 1
+# Errors: 0, Warnings: 0
+do run_test.do
+# QuestaSim vlog 10.3a Compiler 2014.04 Apr 13 2014
+# Start time: 19:30:01 on Oct 09,2016
+# vlog -reportprogress 300 test.sv 
+# -- Compiling module top
+# -- Compiling program test_program
+# ** Warning: test.sv(36): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	top
+# End time: 19:30:01 on Oct 09,2016, Elapsed time: 0: 0: 0
+# Errors: 0, Warnings: 1
+# vsim -novopt work.top
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.top
+# Loading sv_std.std
+# Loading work.top
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.env_m
+# Loading work.env_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_intf_i
+# Loading work.input_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.input_drvr_m
+# Loading work.input_drvr_m
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_intf_i
+# Loading work.output_intf_i
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.output_mon_s
+# Loading work.output_mon_s
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.microprocessor
+# Loading work.microprocessor
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_memory
+# Loading work.program_memory
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.instruction_decoder
+# Loading work.instruction_decoder
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.program_sequencer
+# Loading work.program_sequencer
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.computational_unit
+# Loading work.computational_unit
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.Data_Memory_RAM
+# Loading work.Data_Memory_RAM
+# Refreshing /home/xiw031/engr-ece/CME435/lab2/RAM/work.test_program
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.top
+# Loading work.env_m
+# Loading work.input_intf_i
+# Loading work.input_drvr_m
+# Loading work.output_intf_i
+# Loading work.output_mon_s
+# Loading work.program_memory
+# Loading work.test_program
+# ** Warning: (vsim-3017) env.sv(32): [TFMPC] - Too few port connections. Expected 19, found 4.
+#         Region: /top/env/GOLD
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'zero_flag'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_data'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pm_address'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_PS'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'from_ID'.
+# ** Warning: (vsim-3722) env.sv(32): [TFMPC] - Missing connection for port 'ir'.
+run -all
+# 1
+# Simulation stop requested.
+quit -sim
+# End time: 19:33:19 on Oct 09,2016, Elapsed time: 0: 3:45
