@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+<TITLE>EE 431 Assembler Documentation</TITLE>
+</HEAD>
+<BODY>
+<H1>Documentation for EE431 microprocessor cross-assembler</H1>
+<P>
+<PRE>
+Pseudo-ops
+       ORG    expr        Set location counter to value of expr.
+                          The expression must be defined in pass 0, so
+                          no forward references.
+       ALIGN              Round location counter to next higher 16-byte
+                          boundary.  Has no effect if location counter
+                          is already on a 16-byte boundary.
+symbol EQU    expr        Add `symbol' to symbol table with value of expr.
+
+Op-codes
+       LOAD   dest,#expr  Load `dest' register with value of expr.
+       MOV    dest,src    Copy contents of `src' register to `dest' register.
+       JMP    expr        Jump to specified location.  Will cause `J'
+                          error if low nibble of expr is non-zero.
+       JNZ    expr        Jump to specified location if result register
+                          is non-zero (i.e. if zero flag is not set).
+                          Will cause `J' error if low nibble of expr
+                          is non-zero.
+       NEG    Xi          Negate (two's complement) contents of specified
+                          X register (X0 or X1) and leave result in R
+                          register.
+       ADD    Xi,Yi       Add contents of specified X register (X0 or X1)
+                          and contents of specified Y register (Y0 or Y1)
+                          and leave result in R register.
+       NOPC8              ALU function code 0 No OPeration using 8'HC8         
+       NOPCF              ALU function code 0 No OPeration using 8'HCF       
+       SUB    Xi,Yi       Subtract contents of specified Y register
+                          (Y0 or Y1) from contents of specified X
+                          register (X0 or X1) and leave result in R
+                          register.
+       MULHI  Xi,Yi       Multiply contents of specified X register
+                          (X0 or X1) and contents of specified Y
+                          register (Y0 or Y1) and leave most-significant
+                          nibble of result in R register.
+       MULLO  Xi,Yi       Multiply contents of specified X register
+                          (X0 or X1) and contents of specified Y
+                          register (Y0 or Y1) and leave least-significant
+                          nibble of result in R register.
+       AND    Xi,Yi       Logical AND contents of specified X register
+                          (X0 or X1) and contents of specified Y register
+                          (Y0 or Y1) and leave result in R register.
+       XOR    Xi,Yi       Logical exclusive-OR contents of specified X
+                          register (X0 or X1) and contents of specified
+                          Y register (Y0 or Y1) and leave result in R
+                          register.
+       COM    Xi          Complement contents of specified X register
+                          (X0 or X1) and leave result in R register.
+       NOPD8              ALU function code 7 No OPeration using 8'HD8         
+       NOPDF              ALU function code 7 No OPeration using 8'HDF       
+</PRE>
+
+<H2>Registers</H2>
+<table>
+<tr><td>X0
+<tr><td>X1
+<tr><td>Y0
+<tr><td>Y1
+<tr><td>R<td>ALU result register (source only)
+<tr><td>M<td>Contents used to auto-increment I after each data memory access
+<tr><td>I<td>Data memory index register
+<tr><td>DM<td>Contents of data memory location given by contents of I register
+<tr><td>OREG<td>or O_REG (destination only)
+<tr><td>IREG<td>or I_REG or IPINS or I_PINS (source only)
+</table>
+<P>
+<H2>Syntax</H2>
+<ul>
+<li>Labels must begin in the first column.
+<li>Labels are case-sensitive.
+<li>Labels may optionally be followed by a <code>:</code>.
+<li>Op-codes, register names, are not case-sensitive.
+<li>Op-codes (and pseudo-ops) must not begin in the first column.
+<li>Expressions are currently limited to a single number or symbol.
+<li>Numbers are Verilog syntax <size><base_format><number> (8'b1010_1001).
+<li>Comments begin with a semi-colon and continue to the end of the line.
+</ul>
+<P>
+<H2>Example Program</H2>
+The following assembler program
+<PRE>
+;
+; Example program
+;
+NUM     EQU     4'b0110
+        org     000
+loop    mov     X0,IREG         ; This is a comment
+        load    Y1,#NUM
+        add     X0,Y1
+        mov     OREG,R
+        jnz     lab
+        jmp     loop
+        ALIGN
+lab:
+        jmp     lab
+</PRE>
+will produce this listing.  The value of the location counter and any
+output bytes produced by the line are shown at the left of the line.
+<PRE>
+                ;
+                ; Example program
+                ;
+  0006          NUM     EQU     4'b0110
+  0000                  org     000
+  0000 80       loop    mov     X0,IREG         ; This is a comment
+  0001 36               load    Y1,#NUM
+  0002 CA               add     X0,Y1
+  0003 A4               mov     OREG,R
+  0004 F1               jnz     lab
+  0005 E0               jmp     loop
+  0010                  ALIGN
+  0010          lab:
+  0010 E1               jmp     lab
+</PRE>
+<P>
+<H2>Error codes</H2>
+Lines with errors are indicated by the presence of one of the following
+single-character error codes in the first column of the listing.
+<table>
+<tr><td><code>E</code><td>Bad expression.
+<tr><td><code>J</code><td>Jump target is not aligned on 16-byte boundary.
+<tr><td><code>L</code><td>EQU statement has no label.
+<tr><td><code>M</code><td>Multiply-defined symbol.
+<tr><td><code>N</code><td>Invalid number.
+<tr><td><code>O</code><td>Invalid opcode.
+<tr><td><code>P</code><td>Phase error.  Symbol value different in first and second pass.
+<tr><td><code>R</code><td>Invalid register.
+<tr><td><code>r</code><td>Invalid register combination.
+<tr><td><code>S</code><td>Syntax error.
+<tr><td><code>U</code><td>Undefined symbol.
+<tr><td><code>V</code><td>Value out of range.
+<tr><td><code>X</code><td>Invalid X register.
+<tr><td><code>Y</code><td>Invalid Y register.
+</table>
+<P>
+<H2>Standalone Application</H2>
+The cross-assembler can be run as a traditional standalone application (i.e. not from within a web browser) as:
+<P>
+<code>      java -jar EE431AssemblerApp.jar </code><em>xxxx</em><code>.asm</code>
+<P>
+<P>
+This will produce two output files, <em>xxxx</em><code>.lst</code> and  <em>xxxx</em><code>.hex</code>.
+</BODY>
+</HTML>
